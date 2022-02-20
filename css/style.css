@@ -27,6 +27,43 @@ body {
 font-family:inherit унаследовать предка шрифт} 
 */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.container{
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto auto;
+}
+
+header {
+  border-bottom-style: solid;
+  border-bottom-color: #ECECEC;
+  border-bottom-width: 1px;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-link-list{
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   text-decoration: none;
   font-style: normal;
@@ -38,9 +75,28 @@ font-family:inherit унаследовать предка шрифт}
   /* identical to box height */
 
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 .logo-accent {
   color: var(--accent-color);
+}
+
+nav{
+  margin-right: 331px;
+}
+
+.header-link-list{
+  display: flex;
+}
+
+.nav-item{
+  margin-right: 50px;
+}
+.nav-item:last-child{
+  margin-right: 0px;
+}
+.contacts-list{
+  display: flex;
 }
 
 .header-link-list,
@@ -75,11 +131,19 @@ font-family:inherit унаследовать предка шрифт}
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 50px;
+  min-width: 122px;
+}
+.contacts:last-child{
+  margin-right: 0px;
 }
 
 .contacts:hover,
 .contacts:focus {
   color: var(--accent-color);
+
+
+
 }
 .hero {
   background-color: var(--futer-bg-color);
@@ -94,7 +158,10 @@ font-family:inherit унаследовать предка шрифт}
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  padding-top: 200px;
 }
+
 .main-button {
   font-style: normal;
   font-weight: 700;
@@ -108,11 +175,47 @@ font-family:inherit унаследовать предка шрифт}
   color: #ffffff;
   font-family: inherit;
   cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
   /* font-family:inherit; - унаследовать шрифт предка  */
 }
 .main-button:hover,
 .main-button:focus {
   background-color: #188ce8;
+}
+
+.advantages-list{
+  display: flex;
+}
+.advantages-list-item{
+  margin-right: 30px;
+}
+.advantages-list-item:last-child{
+  margin-right: 0px;
+}
+
+.gallery-list{
+  display: flex;
+}
+.gallery-list-item{
+  margin-right: 30px;
+}
+.gallery-list-item:last-child{
+  margin-right: 0px;
+}
+
+
+.team-list{
+  display: flex;
+}
+.team-list-item{
+  margin-right: 30px;
+}
+.team-list-item:last-child{
+  margin-right: 0px;
 }
 
 .advantages-list h3 {
@@ -123,6 +226,7 @@ font-family:inherit унаследовать предка шрифт}
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 
 .gallery-name,
@@ -135,6 +239,7 @@ font-family:inherit унаследовать предка шрифт}
   letter-spacing: 0.03em;
   font-family: var(--main-font);
   color: var(--main-color);
+  margin-bottom: 50px;
 }
 
 .team-list h3 {
@@ -159,9 +264,17 @@ font-family:inherit унаследовать предка шрифт}
 .location {
   color: #ffffff;
 }
-.footer-page > .logo {
+.footer-page .logo {
   color: #ffffff;
 }
+
+.button-list{
+  display: flex;
+  justify-content:center;
+  margin-bottom: 50px;
+}
+
+
 .button-list button {
   font-family: var(--main-font);
   font-style: normal;
@@ -174,10 +287,29 @@ font-family:inherit унаследовать предка шрифт}
   background-color: #f5f4fa;
   cursor: pointer;
 }
+.filter-button{
+  margin-right: 8px;
+  border-radius: 4px;
+  box-sizing: 0px;
+  border: none;
+  padding: 6px 22px;
+}
+filter-button:last child{
+  margin-right: 0px;
+  text-align: center;
+}
+
 .filter-button:focus,
 .filter-button:hover {
   background-color: var(--accent-bg-color);
   color: #ffffff;
+}
+
+.portfolio-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 portfolio-list p {
   font-style: normal;
@@ -197,6 +329,13 @@ portfolio-list p {
 address {
   font-style: normal;
 }
+.footer-container{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -210,4 +349,32 @@ address {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
+}
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-list-item{
+  border-bottom-color: #EEEEEE;
+  border-bottom-width: 1px;
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.logo-footer{
+  padding-bottom: 20px;
+}
+.address-list{
+  display: flex;
+  flex-direction: column;
+}
+.location{
+  margin-bottom: 9px;
+}
+.footer-contacts{
+  margin-bottom: 9px;
+}
+.footer-contacts:last-child{
+  margin-bottom: 0px;
 }
