@@ -324,7 +324,7 @@ portfolio-list p {
 address {
   font-style: normal;
 }
-.footer-container {
+.container .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
@@ -410,4 +410,6 @@ address {
 }
 img{
   display: block;
+  max-width: 100%;
+  height: auto;
 }
