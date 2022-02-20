@@ -22,7 +22,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-
 }
 /* .main-button{background-color: transparent;- прозрачная кнопка
 font-family:inherit унаследовать предка шрифт} 
@@ -359,7 +358,7 @@ address {
   border-bottom-style: solid;
 }
 
-.project-name{
+.project-name {
   padding-top: 20px;
   padding-right: 24px;
   padding-left: 24px;
@@ -374,7 +373,7 @@ address {
   border-right-style: solid;
 }
 
-.project-type{
+.project-type {
   padding-top: 0px;
   padding-right: 24px;
   padding-left: 24px;
@@ -409,7 +408,7 @@ address {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-img{
+img {
   display: block;
   max-width: 100%;
   height: auto;
