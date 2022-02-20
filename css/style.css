@@ -40,7 +40,7 @@ ul {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto auto;
@@ -142,7 +142,6 @@ nav {
 .contacts:focus {
   color: var(--accent-color);
 }
-
 
 .hero {
   background-color: var(--futer-bg-color);
@@ -351,11 +350,42 @@ address {
   padding-bottom: 94px;
 }
 .portfolio-list-item {
-  border-bottom-color: #eeeeee;
-  border-bottom-width: 1px;
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
+  border-bottom-color: #eeeeee;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.project-name{
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 4px;
+
+  border-left-color: #eeeeee;
+  border-left-width: 1px;
+  border-left-style: solid;
+
+  border-right-color: #eeeeee;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+.project-type{
+  padding-top: 0px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+
+  border-left-color: #eeeeee;
+  border-left-width: 1px;
+  border-left-style: solid;
+
+  border-right-color: #eeeeee;
+  border-right-width: 1px;
+  border-right-style: solid;
 }
 
 .logo-footer {
@@ -374,7 +404,10 @@ address {
 .footer-contacts:last-child {
   margin-bottom: 0px;
 }
-.container-hero{
+.container-hero {
   padding-top: 200px;
   padding-bottom: 200px;
+}
+img{
+  display: block;
 }
