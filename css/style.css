@@ -143,8 +143,13 @@ nav {
   color: var(--accent-color);
 }
 
-.hero {
+.hero-section {
   background-color: var(--futer-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.container-hero {
+  max-width: 696px;
 }
 .hero-name {
   color: #ffffff;
@@ -157,6 +162,7 @@ nav {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  min-height: 120px;
 }
 
 .main-button {
@@ -184,14 +190,22 @@ nav {
   background-color: #188ce8;
 }
 
+.our-advantages.section {
+  padding-bottom: 47px;
+}
+
 .advantages-list {
   display: flex;
 }
 .advantages-list-item {
+  max-width: 270px;
   margin-right: 30px;
 }
 .advantages-list-item:last-child {
   margin-right: 0px;
+}
+.gallery.section {
+  padding-top: 47px;
 }
 
 .gallery-list {
@@ -212,6 +226,15 @@ nav {
 }
 .team-list-item:last-child {
   margin-right: 0px;
+}
+
+.name-item-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.name-item-team > h3 {
+  margin-bottom: 10px;
 }
 
 .advantages-list h3 {
@@ -324,9 +347,12 @@ portfolio-list p {
 address {
   font-style: normal;
 }
-.container.footer-container {
+.footer-page {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.container.footer-container {
   display: flex;
   flex-direction: column;
 }
@@ -353,39 +379,25 @@ address {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
+}
+
+.portfolio-item {
+  padding: 20px 24px;
+  border-left-color: #eeeeee;
+  border-left-width: 1px;
+  border-left-style: solid;
+
+  border-right-color: #eeeeee;
+  border-right-width: 1px;
+  border-right-style: solid;
+
   border-bottom-color: #eeeeee;
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
 
 .project-name {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 4px;
-
-  border-left-color: #eeeeee;
-  border-left-width: 1px;
-  border-left-style: solid;
-
-  border-right-color: #eeeeee;
-  border-right-width: 1px;
-  border-right-style: solid;
-}
-
-.project-type {
-  padding-top: 0px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 20px;
-
-  border-left-color: #eeeeee;
-  border-left-width: 1px;
-  border-left-style: solid;
-
-  border-right-color: #eeeeee;
-  border-right-width: 1px;
-  border-right-style: solid;
+  margin-bottom: 4px;
 }
 
 .logo-footer {
@@ -404,10 +416,7 @@ address {
 .footer-contacts:last-child {
   margin-bottom: 0px;
 }
-.container-hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+
 img {
   display: block;
   max-width: 100%;
